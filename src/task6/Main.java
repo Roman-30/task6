@@ -24,13 +24,11 @@ public class Main {
         int sum = 0;
 
         for (int i = 1; i <= repeat; i++) {
-            double v = ((i + 2) * (i + 1)) / 2 * Math.pow(x0, i);
+            double condition = ((i + 2) * (i + 1)) / 2 * Math.pow(x0, i);
             if (checkCycleNumber(i)) {
-                sum = (int) (x + v);
-                // System.out.println(i);
+                sum = (int) (x + condition);
             } else {
-                sum = (int) (x - v);
-                // System.out.println(i);
+                sum = (int) (x - condition);
             }
             x = sum;
         }
