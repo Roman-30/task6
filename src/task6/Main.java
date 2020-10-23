@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        int x = reaSequenceElements("Enter 'X' value: ");
-        int n = reaSequenceElements("Enter the number of members in the sequence to sum them. n = ");
+        int x = readSequenceElements("Enter 'X' value: ");
+        int n = readSequenceElements("Enter the number of members in the sequence to sum them. n = ");
         int repeat  = calculateNumberRepetitions(n);
         int summa = calculateSumSequence(x, repeat);
 
         printSum(n, summa);
     }
 
-    public static int reaSequenceElements(String name) {
+    public static int readSequenceElements(String name) {
         Scanner in = new Scanner(System.in);
         System.out.print(name);
         return in.nextInt();
